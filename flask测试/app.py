@@ -1,11 +1,14 @@
 from flask import Flask,render_template
+import datetime
 
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-
-    return render_template("index.html")
+    time=datetime.date.today()
+    namelist=["zzf","zb","zgl"]#列表传参
+    zd = {"zzf": "19", "zb": "15", "zgl": "62"}
+    return render_template("index.html",var=time,name=namelist,zd=zd)  #var给index.html传参
 @app.route('/hdxw')
 def hdxw():
 

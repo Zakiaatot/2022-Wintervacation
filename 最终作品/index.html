@@ -9,25 +9,7 @@
  <body>
  <a href="./hdxw">这是华⼤新闻的站点</a>
  <br/>
- 今天是{{var}}，欢迎光临！
- <br/>
- 幸运观众是： <br/>
-  {% for i in name%}
-  <li>{{i}}</li>
- {%endfor%}
 
- <br/>
- <table border="1">
-  {% for i,j in zd.items() %}
-  <tr>
-   <td>{{i}}</td>
-   <td>{{j}}</td>
 
-  </tr>
-
- {%endfor%}
-  </tr>
-
- </table>
  </body>
  </html>
