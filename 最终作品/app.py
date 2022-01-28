@@ -9,9 +9,9 @@ app = Flask(__name__)
 @app.route('/hdxw')
 def hello_world():
     time=datetime.date.today()
-    namelist=["zzf","zb","zgl"]#列表传参
+
     zd = spider.spider()
-    return render_template("hdxw.html",var=time,name=namelist,zd=zd)  #var给index.html传参
+    return render_template("hdxw.html",var=time,zd=zd)  #var给index.html传参
 @app.route('/')
 def hdxw():
 
