@@ -38,6 +38,12 @@ baseurl="https://www.hqu.edu.cn/"
 SJ=bs.find_all('tr',id = 'line_u15_0')#查找id为line_u15_0的tr标签内容保存至SJ
 x=SJ[0]#符合条件的只有一个,所以选第一个
 
+
+#查找输出名字
+y=x.find('font')
+name=y.string
+print(name)
+
 #查找输出链接
 y=x.find('a')   #在tr中查找a标签并存入y
 link=baseurl+y.get('href')#get提取href内容，最终制作成link
