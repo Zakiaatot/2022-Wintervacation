@@ -48,3 +48,4 @@ print(name)
 y=x.find('a')   #在tr中查找a标签并存入y
 link=baseurl+y.get('href')#get提取href内容，最终制作成link
 print(link)
+#
