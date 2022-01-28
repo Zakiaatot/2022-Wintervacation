@@ -27,6 +27,7 @@ def loop():
         print("*" * 20)
         print("华大新闻爬虫测试")
         print("*" * 20)
+        print("\n")
 
         url = "https://www.hqu.edu.cn/hdxw.htm"
         html = askurl(url)
@@ -50,8 +51,11 @@ def loop():
         print("数据处理或打印出错了")
         print(e)
     finally:
+        print("\n")
         print("*" * 20)
-        time.sleep(5)#5秒一次
+        time.sleep(5)  # 5秒一次
+        print("\n"*5)
+
 
 
 
@@ -81,4 +85,4 @@ def askurl(url):
 
 
 
-main()
+main()#执行主程序
