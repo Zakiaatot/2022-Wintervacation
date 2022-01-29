@@ -18,7 +18,7 @@
 <br><br>
 3. ***测试爬虫*** 与 ***测试flask*** 为本人爬虫和flask的实战尝试
 <br><br>
-4. ***部署相关*** 包含部署过程与nginx.conf
+4. ***部署相关*** 包含部署过程与nginx.conf与uwsgi.ini
 <br><br>
 5. ***最终作品*** 是最终flask作品
 
