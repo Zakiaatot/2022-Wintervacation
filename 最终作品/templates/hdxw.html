@@ -5,26 +5,34 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>hdxw</title>
+
  </head>
+ <style>	body{
+background-image: url(https://www.boileddog.top/sends.png);
+background-size:600px 397px;
+background-repeat:no-repeat;
+background-attachment: fixed;
+background-position: center ;
+}</style>
  <body>
- <a href="./hdxw">这是华⼤新闻的站点</a>
+ <center><font size="10">这是华⼤新闻的站点</font></center>
  <br/>
- 今天是{{var}}，欢迎光临！
+ <center>今天是{{var}}，欢迎光临！</center>
  <br/>
 
 
  <br/>
- <table border="1">
+ <center><table border="1">
   {% for i,j in zd.items() %}
   <tr>
-   <td>{{i}}</td>
-   <td><a href={{j}}>{{j}}</a></td>
+   <td><font color="blue" size="4">{{i}}</font> </td>
+   <td><a href={{j}}><font color="red" size="4">{{j}}</font></a></td>
 
   </tr>
 
  {%endfor%}
   </tr>
 
- </table>
+ </table></center>
  </body>
  </html>
